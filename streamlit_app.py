@@ -1,3 +1,9 @@
+# Cek dan install statsmodels jika belum ada
+try:
+    import statsmodels
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "statsmodels"])
+    import statsmodels
 import numpy as np
 import pandas as pd
 import streamlit as st
