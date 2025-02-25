@@ -24,7 +24,7 @@ st.markdown("""
 # ===========================
 # 🏥 Judul Aplikasi
 # ===========================
-st.markdown('<h1 class="title">Prediksi Jumlah Pasien dan Optimalisasi Pengadaan Tenaga Medis Dokter Pada Klinik Rahmani</span></h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="title">Prediksi Jumlah Pasien dan Optimalisasi Kebutuhan Tenaga Medis Dokter Pada Klinik Rahmani</span></h1>', unsafe_allow_html=True)
 
 # ===========================
 # 🩺 Pilih Jenis Dokter
@@ -37,6 +37,7 @@ tipe_dokter = st.selectbox('Pilih Jenis Dokter:', ['🩺 Dokter Umum', '🦷 Dok
 try:
     if tipe_dokter == '🩺 Dokter Umum':
         model_file = 'model.sav'
+        exog ='exog.sav'
         data_file = 'data_dokter_umum2024.csv'
         time_per_patient = 15
         jenis_dokter_text = 'Dokter Umum'
