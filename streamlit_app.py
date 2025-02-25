@@ -104,7 +104,7 @@ if model:
     wkt_optimal_dokter = ((wkt_per_month * stp) / 4) / 60
     
     st.subheader(f"📌 Kebutuhan SDM {jenis_dokter_text}")
-    st.write(f"👨‍⚕ Jumlah Dokter yang Dibutuhkan: {final_sdm:.0f} dokter")
+    st.write(f"👨‍⚕ Jumlah Dokter yang Dibutuhkan Dalam 1 Bulan: {final_sdm:.0f} dokter")
     st.write(f"⏳ Waktu Optimal per Minggu: {wkt_optimal_dokter:.0f} jam")
     
     # ===========================
